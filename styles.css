@@ -148,56 +148,64 @@ header {
 
 .skills-content {
   display: flex;
-  column-gap: 2.5rem;
-  row-gap: 3rem;
+  column-gap: 0rem;
+  row-gap: 1rem;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
 
 .skill-badge {
-  width: 180px;
+  width: auto;
+  padding:  5px 20px;
   height: 35px;
   line-height: 2rem;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
+  border: 2px double  rgba(255, 99, 71, 0.395);
+  
 }
 
 .skill-badge span {
-  margin-left: 0.5rem;
-  color: var(--white-text-color);
+  color: var(--gray-text-color);
   font-weight: 500;
-}
-.skill-badge-inner {
-  height: 100%;
-  border-radius: 20px 0px 0px 20px;
-}
-/* Skill Badge Percentage */
-
-.skill-50 {
-  width: 50%;
-  background-color: rgb(151, 19, 10);
+  
+  
 }
 
-.skill-60 {
-  width: 60%;
-  background-color: rgb(151, 140, 10);
+.pulse {
+  animation: pulse-animation 2s infinite;
 }
 
-.skill-70 {
-  width: 70%;
-  background-color: rgb(67, 97, 250);
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    
+  }
+  50%{
+    transform: scale(1.02);
+
+  }
+  100% {
+    transform: scale(1);
+    
+  }
+}
+/* Skill icon color */
+
+.light-blue{
+  color:#61DBFB;
 }
 
-.skill-80 {
-  width: 80%;
-  background-color: rgb(140, 10, 151);
+.orange{
+  color: #E44D26;
 }
 
-.skill-90 {
-  width: 90%;
-  background-color: rgb(10, 151, 31);
+.yellow{
+  color:	#F0DB4F
 }
+
+
 
 /* Experience Section */
 #experience {
@@ -516,7 +524,7 @@ Media Queries (Mobile)
   /* Mobile Navigation */
   #navbar-mobile {
     display: block;
-    color: white;
+    color: var(--white-text-color);
     font-size: 1rem;
     padding: 1rem;
   }
@@ -587,11 +595,6 @@ Media Queries (Mobile)
     margin-left: 0rem;
   }
 
-  /* Mobile Skills Section */
-  .skill-badge {
-  width: 140px;
-  height: 35px;
-  }
 
   /* Mobile Experience Section */
 
