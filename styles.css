@@ -148,9 +148,9 @@ header {
 
 .skills-content {
   display: flex;
-  column-gap: 0rem;
-  row-gap: 1rem;
-  justify-content: space-around;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
@@ -158,55 +158,47 @@ header {
 .skill-badge {
   text-align: center;
   width: 100px;
-  padding:  5px 20px;
+  padding: 5px 20px;
   height: 35px;
   line-height: 2rem;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  border: 2px solid  rgba(255, 99, 71, 0.395);
-  
+  border: 2px solid rgba(255, 99, 71, 0.395);
 }
 
 .skill-badge span {
   color: var(--gray-text-color);
   font-weight: 500;
-  
-  
 }
 
-.pulse {
-  animation: pulse-animation 2s infinite;
+.heartbeat {
+  animation: heartbeat-animation 2s infinite;
 }
 
-@keyframes pulse-animation {
+@keyframes heartbeat-animation {
   0% {
     transform: scale(1);
-    
   }
-  50%{
+  50% {
     transform: scale(1.05);
-
   }
   100% {
     transform: scale(1);
-    
   }
 }
 /* Skill icon color */
 
-.light-blue{
-  color:#61DBFB;
+.light-blue {
+  color: #61dbfb;
 }
 
-.orange{
-  color: #E44D26;
+.orange {
+  color: #e44d26;
 }
 
-.yellow{
-  color:	#F0DB4F
+.yellow {
+  color: #f0db4f;
 }
-
-
 
 /* Experience Section */
 #experience {
@@ -473,7 +465,7 @@ textarea {
   border-radius: 10px;
 }
 
-.contact-form button:hover{
+.contact-form button:hover {
   background-color: var(--primary-color);
 }
 
@@ -574,28 +566,33 @@ Media Queries (Mobile)
     font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 0.5rem;
-    
   }
 
   #primary-heading span {
     font-size: 2.5rem;
   }
   .social-icons li a {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   /* Mobile Section Headings */
   .section-heading {
+    font-size: 1rem;
     width: 100%;
   }
   .section-heading h2 {
     margin-left: 0rem;
   }
 
-  .contact-heading h2 {
-    margin-left: 0rem;
+  .contact-heading{
+    font-size: 1rem;
+
   }
 
+  .contact-heading h2 {
+    
+    margin-left: 0rem;
+  }
 
   /* Mobile Experience Section */
 
@@ -610,7 +607,7 @@ Media Queries (Mobile)
   .exp-card:nth-child(2n)::after {
     right: auto;
   }
-  
+
   .exp-content .exp-card:nth-child(2n) {
     left: 0%;
     margin: 5rem 2vw;
@@ -624,9 +621,8 @@ Media Queries (Mobile)
   }
 
   .exp-heading {
-  margin-bottom: 0px;
-}
-
+    margin-bottom: 0px;
+  }
 
   /* Mobile Education Section */
   .edu-divider-line {
