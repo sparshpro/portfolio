@@ -9,14 +9,14 @@ body {
 /* Header Section */
 header {
   background-image: url(image/macbook_mouse.jpg);
-  height: 60vh;
+  height: 60vmin;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0.8;
-  display: relative;
+
 }
 
 .container-width {
@@ -532,7 +532,7 @@ textarea {
   #my-name {
     font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   #my-name span {
     font-size: 2.5rem;
@@ -561,7 +561,7 @@ textarea {
   }
 
   .exp::after {
-    left: -5.4% !important;
+    left: calc(-2.5vw - 2.6px) !important;
   }
   .exp:nth-child(2n)::after {
     left: 0px;
