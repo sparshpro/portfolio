@@ -21,15 +21,14 @@
   <body>
     <!-- Header Section -->
     <header>
-      <nav id="navbar-mobile" >
-          <input type="checkbox" id="check">
+      <nav id="navbar-mobile">
+        <input type="checkbox" id="check" />
         <label for="check">
           <i class="fa-solid fa-bars"></i>
         </label>
-        <ul >
+        <ul>
           <li>
             <a href="#home">Home</a>
-            
           </li>
           <li>
             <a href="#about-photo">About</a>
@@ -49,11 +48,7 @@
           <li>
             <a href="#contact">Contact</a>
           </li>
-          
         </ul>
-      
-        
-       
       </nav>
       <nav id="navbar-main" class="container-width">
         <ul>
@@ -383,7 +378,7 @@
 
         <div class="projects container-width">
           <div class="project-card">
-            <img src="image/project.jpeg" alt="Project Image" />
+            
             <div class="project-info">
               <h3>Project Title</h3>
               <p>
@@ -394,7 +389,8 @@
           </div>
 
           <div class="project-card">
-            <img src="image/project.jpeg" alt="Project Image" />
+            <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
+            
             <div class="project-info">
               <h3>Project Title</h3>
               <p>
@@ -402,10 +398,11 @@
                 technologies used.
               </p>
             </div>
+            </a>
           </div>
 
           <div class="project-card">
-            <img src="image/project.jpeg" alt="Project Image" />
+            <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
             <div class="project-info">
               <h3>Project Title</h3>
               <p>
@@ -413,21 +410,24 @@
                 technologies used.
               </p>
             </div>
+            </a>
           </div>
 
           <div class="project-card">
-            <img src="image/project.jpeg" alt="Project Image" />
-            <div class="project-info">
-              <h3>Project Title</h3>
-              <p>
-                Brief description of the project highlighting key features and
-                technologies used.
-              </p>
-            </div>
+            
+            <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
+              <div class="project-info">
+                <h3>Project Title</h3>
+                <p>
+                  Brief description of the project highlighting key features and
+                  technologies used.
+                </p>
+              </div>
+            </a>
           </div>
 
           <div class="project-card">
-            <img src="image/project.jpeg" alt="Project Image" />
+            
             <div class="project-info">
               <h3>Project Title</h3>
               <p>
@@ -448,17 +448,16 @@
 
         <div class="contact-content container-width">
           <div class="contact-input">
-            <form action="#">
-              <input type="text" autocomplete="nope" placeholder="Your Name" />
+            <form action="https://api.web3forms.com/submit" method="POST">
               <input
-                type="email"
-                autocomplete="nope"
-                placeholder="Your Email"
+                type="hidden"
+                name="access_key"
+                value="a3bf759f-fc96-4a3d-a432-8e773b6b8335"
               />
-              <textarea name="" id="" placeholder="Message"></textarea>
-              <div>
-                <button type="submit">Send Message</button>
-              </div>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email"  required />
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button type="submit">Submit</button>
             </form>
           </div>
 
