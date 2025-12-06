@@ -504,6 +504,11 @@ textarea {
 Media Queries (Mobile)
 ------------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
+  /* Container Width */
+  .container-width {
+    width: 90vw;
+  }
+
   /* Primary Navigation*/
   #navbar-primary {
     display: none;
@@ -553,12 +558,14 @@ Media Queries (Mobile)
 
   #heading-socials {
     padding-top: 2vmax;
+    width: 50vw;
   }
 
   #primary-heading {
     font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 0.5rem;
+    
   }
 
   #primary-heading span {
@@ -580,11 +587,17 @@ Media Queries (Mobile)
     margin-left: 0rem;
   }
 
+  /* Mobile Skills Section */
+  .skill-badge {
+  width: 140px;
+  height: 35px;
+  }
+
   /* Mobile Experience Section */
 
   .divider-line {
     left: 0%;
-    height: 83.5%;
+    height: 85%;
   }
 
   .exp-card::after {
@@ -614,7 +627,7 @@ Media Queries (Mobile)
   /* Mobile Education Section */
   .edu-divider-line {
     left: 0%;
-    height: 79%;
+    height: 80%;
   }
 
   /* Mobile Portfolio Section*/
