@@ -1,6 +1,37 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
+/* Variables */
+:root {
+  --primary-color: tomato;
+  --gray-text-color: rgb(111, 111, 111);
+  --white-text-color: white;
+  --gray-bg-color: rgba(233, 233, 233, 0.852);
+  --white-bg-color: white;
+}
+/* Reusable Components */
+.container-width {
+  width: 60vw;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.section-heading i {
+  font-size: 2rem;
+}
+
+/* Body */
 body {
   margin: 0px;
   font-family: "EB Garamond", serif;
@@ -16,15 +47,10 @@ header {
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0.8;
-
 }
 
-.container-width {
-  width: 60vw;
-  margin: auto;
-}
-
-#navbar-main ul {
+/* Primary Navigation */
+#navbar-primary ul {
   margin: 0px;
   padding: 1.2rem 0px;
   display: flex;
@@ -34,32 +60,34 @@ header {
   flex-wrap: wrap;
 }
 
-#navbar-main ul li a {
+#navbar-primary ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--white-text-color);
   font-size: 1.2rem;
   display: inline-block;
   transition: transform 0.4s ease, border-bottom 2s ease;
 }
 
-#navbar-main ul li a:hover {
+#navbar-primary ul li a:hover {
   transform: scale(1.1);
-  color: tomato;
+  color: var(--primary-color);
   border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-#header-content {
+/* Primary Heading & Socials*/
+#heading-socials {
   text-align: center;
-  color: white;
+  color: var(--white-text-color);
   padding-top: 10vmin;
 }
 
-#my-name {
+#primary-heading {
   font-size: 3rem;
   margin: 0px;
 }
-#my-name span {
-  color: tomato;
+
+#primary-heading span {
+  color: var(--primary-color);
   font-size: 3.5rem;
 }
 
@@ -72,10 +100,9 @@ header {
   display: inline-block;
 }
 .social-icons li a {
-  font-size: 1.5rem;
-  color: white;
+  font-size: 2rem;
+  color: var(--white-text-color);
   border-radius: 50%;
-  display: inline-block;
   width: 2rem;
   height: 2rem;
   padding: 0.3rem;
@@ -84,11 +111,13 @@ header {
   box-shadow: 0px 0px 8px tomato;
 }
 
+/* Main Section */
+
 /* About Section */
 #about {
-  background-color: white;
+  background-color: var(--white-bg-color);
 }
-.about-main {
+.about-content {
   text-align: center;
   position: relative;
   top: -75px;
@@ -103,35 +132,21 @@ header {
   border: 2px solid white;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
 }
-#about-content {
+
+#about-description {
   text-align: justify;
-  color: rgb(111, 111, 111);
+  color: var(--gray-text-color);
 }
 
-/* Skills */
+/* Skills Section */
 #skills {
   margin: 0px auto;
   padding: 0px;
   margin-top: -50px;
-  background-color: rgba(233, 233, 233, 0.852);
-}
-.section-heading {
-  text-align: center;
-  font-size: 1.5rem;
-  color: tomato;
-  margin-bottom: 3rem;
+  background-color: var(--gray-bg-color);
 }
 
-.section-heading h2 {
-  display: inline-block;
-  margin-left: 1rem;
-}
-
-.section-heading i {
-  font-size: 2rem;
-}
-
-.skill-progress {
+.skills-content {
   display: flex;
   column-gap: 2.5rem;
   row-gap: 3rem;
@@ -140,101 +155,99 @@ header {
   padding-bottom: 50px;
 }
 
-.percentage-100 {
+.skill-badge {
   width: 180px;
   height: 35px;
   line-height: 2rem;
   background-color: rgb(180, 180, 180);
   border-radius: 20px;
 }
-.percentage-100 span {
+
+.skill-badge span {
   margin-left: 0.5rem;
-  color: white;
+  color: var(--white-text-color);
   font-weight: 500;
 }
-/* percentage classes */
-.eighty {
-  width: 80%;
+.skill-badge-inner {
   height: 100%;
   border-radius: 20px 0px 0px 20px;
-  background-color: rgb(140, 10, 151);
 }
+/* Skill Badge Percentage */
 
-.ninety {
-  width: 90%;
-  height: 100%;
-  border-radius: 20px 0px 0px 20px;
-  background-color: rgb(10, 151, 31);
-}
-
-.seventy {
-  width: 70%;
-  height: 100%;
-  border-radius: 20px 0px 0px 20px;
-  background-color: rgb(67, 97, 250);
-}
-
-.fifty {
+.skill-50 {
   width: 50%;
-  height: 100%;
-  border-radius: 20px 0px 0px 20px;
   background-color: rgb(151, 19, 10);
 }
 
-.sixty {
+.skill-60 {
   width: 60%;
-  height: 100%;
-  border-radius: 20px 0px 0px 20px;
-
   background-color: rgb(151, 140, 10);
 }
 
-/* Experience */
+.skill-70 {
+  width: 70%;
+  background-color: rgb(67, 97, 250);
+}
+
+.skill-80 {
+  width: 80%;
+  background-color: rgb(140, 10, 151);
+}
+
+.skill-90 {
+  width: 90%;
+  background-color: rgb(10, 151, 31);
+}
+
+/* Experience Section */
 #experience {
-  background-color: white;
+  background-color: var(--white-bg-color);
   padding-bottom: 1rem;
 }
 
-.timeline {
+.exp-content {
   height: auto;
   position: relative;
 }
 
-.timeline .exp {
+.exp-content .exp-card {
   width: 40%;
   height: auto;
   position: relative;
 }
-.timeline .exp:nth-child(2n) {
+
+.exp-content .exp-card:nth-child(2n) {
   left: 60%;
   margin: 0px -2vw;
   text-align: left;
 }
 
-.timeline .exp:nth-child(2n + 1) {
+.exp-content .exp-card:nth-child(2n - 1) {
   margin: 0px 2vw;
 }
 
-.timeline-line {
+/* Divider Dotted */
+.divider-line {
   position: absolute;
   height: 81%;
   width: 0;
-  border: 1px dashed tomato;
+  border: 1px dashed var(--primary-color);
   top: 3%;
   left: 50%;
 }
 
-.timeline-object {
+.divider-object {
   position: sticky;
   top: 25%;
   transform: rotate(90deg);
   z-index: 2;
   margin: -14px;
   font-size: 1.5rem;
-  color: tomato;
+  color: var(--primary-color);
 }
 
-.exp::after {
+/* Divider stops */
+.exp-card::after {
   content: "";
   border-radius: 50%;
   width: 0.7rem;
@@ -246,7 +259,7 @@ header {
   left: calc(100% + 4vw - 4.5px);
 }
 
-.exp:nth-child(2n)::after {
+.exp-card:nth-child(2n)::after {
   left: auto;
   right: calc(100% + 4vw - 6.5px);
 }
@@ -254,7 +267,7 @@ header {
 /* Experience Details */
 .exp-heading {
   text-align: end;
-  color: rgb(111, 111, 111);
+  color: var(--gray-text-color);
   margin-bottom: 1.5rem;
 }
 
@@ -266,7 +279,7 @@ header {
 }
 .exp-heading h4 {
   margin: 0px;
-  color: tomato;
+  color: var(--primary-color);
   font-size: 1rem;
   margin-top: 0.5rem;
 }
@@ -283,21 +296,19 @@ header {
   height: 100%;
 }
 
-.exp p {
+.exp-description {
   width: 100%;
   text-align: justify;
-  color: rgb(111, 111, 111);
-  
+  color: var(--gray-text-color);
 }
 
 /* Education Section */
-
 #education {
-  background-color: rgba(233, 233, 233, 0.852);
+  background-color: var(--gray-bg-color);
   padding-bottom: 1rem;
 }
 
-.timeline-line-2 {
+.edu-divider-line {
   position: absolute;
   height: 76%;
   width: 0;
@@ -306,27 +317,27 @@ header {
   left: 50%;
 }
 
-/* Portfolio Secton */
+/* Portfolio Section */
 #portfolio {
-  background-color: white;
+  background-color: var(--white-bg-color);
   margin-bottom: 2rem;
 }
-.projects {
+
+.project-content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 1rem;
-  column-gap: 1rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .project-card {
   height: 250px;
   width: 250px;
-  box-shadow: 0px 0px 15px rgb(138, 138, 138);
+  box-shadow: 0px 0px 10px rgb(138, 138, 138);
   border-radius: 20px;
   position: relative;
   overflow: hidden;
- 
   transition: all 0.4s ease;
 }
 
@@ -344,35 +355,31 @@ header {
   font-style: oblique;
   background: radial-gradient(
     circle farthest-corner at 50% 50%,
-    rgb(151, 151, 151) 100%
+    rgb(210, 210, 210) 100%
   );
   color: black;
   border-radius: 20px;
-   cursor: pointer;
+  cursor: pointer;
   transition: opacity 0.44s ease;
 }
-
-
 
 .project-card:hover {
   transform: scale(1.05);
 }
 
 .project-card a:visited .project-info {
-  color: tomato;
+  color: var(--primary-color);
 }
 
-
 .project-info h3,
-p {
+.project-info p {
   width: 90%;
   height: auto;
   text-align: center;
 }
 
-
-/* Contact */
-
+/* Footer Section */
+/* Contact Section */
 #contact {
   background: linear-gradient(
     60deg,
@@ -382,10 +389,12 @@ p {
   padding-bottom: 1rem;
 }
 
+/* Contact Heading */
+
 .contact-heading {
   text-align: center;
   font-size: 1.5rem;
-  color: white;
+  color: var(--white-text-color);
   margin-bottom: 3rem;
 }
 .contact-heading h2 {
@@ -397,20 +406,21 @@ p {
   font-size: 2rem;
 }
 
+/* Contact Content */
 .contact-content {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   gap: 2rem;
 }
 
-.contact-input {
+/* Contact Form */
+.contact-form {
   text-align: center;
   width: 50%;
 }
 
-.contact-input input,
+.contact-form input,
 textarea {
   padding: 0px;
   width: 90%;
@@ -419,80 +429,107 @@ textarea {
   border-bottom: 2px solid white;
   margin-bottom: 3rem;
   font-size: 1rem;
-  color: white;
+  color: var(--white-text-color);
   transition: border-color 0.4s ease, color 0.4s ease-in-out;
 }
 
-.contact-input input:focus,
+.contact-form input:focus,
 textarea:focus {
   outline: none;
-  color: white;
-  border-color: tomato;
+  color: var(--white-text-color);
+  border-color: var(--primary-color);
 }
-.contact-input input::placeholder,
+
+.contact-form input::placeholder,
 textarea::placeholder {
   font-size: 1rem;
   color: rgb(163, 163, 163);
 }
 
-.contact-input input,
+.contact-form input,
 textarea {
   background-color: transparent !important;
   background-clip: padding-box !important;
   padding: 0.5rem;
 }
 
-.contact-input button {
+.contact-form button {
   background: transparent;
-  color: white;
+  color: var(--white-text-color);
   border: 2px solid white;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0.5rem;
+  border-radius: 10px;
 }
 
+.contact-form button:hover{
+  background-color: var(--primary-color);
+}
+
+/* Contact Details */
 .contact-details {
   margin: auto;
-  color: white;
+  color: var(--white-text-color);
   text-align: left;
   margin: 0px;
   width: 50%;
 }
-.contact-details h3 {
+
+.getintouch h3 {
   font-size: 1.5rem;
   margin-top: 0;
 }
 
-.contact-details p {
+.getintouch p {
   text-align: left;
 }
 
 .my-address div {
   margin-bottom: 1rem;
 }
+
 .my-address div i {
   margin-right: 0.5rem;
   font-size: 1rem;
 }
-/* navbar Mobile */
+
+/* Mobile Navigation  */
 #navbar-mobile {
   display: none;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 600px) {
-  #check,
-  #navbar-mobile ul {
+/* ---------------------------------------------------------------------
+Media Queries (Mobile)
+------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  /* Primary Navigation*/
+  #navbar-primary {
     display: none;
   }
-  #navbar-mobile ul li a {
-    text-decoration: none;
+  /* Mobile Navigation */
+  #navbar-mobile {
+    display: block;
     color: white;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  #navbar-mobile label i {
+    font-size: 1.5rem;
   }
 
-  #navbar-mobile ul li {
+  #check,
+  .dropdown {
+    display: none;
+  }
+
+  .dropdown li a {
+    text-decoration: none;
+    color: var(--white-text-color);
+  }
+
+  .dropdown li {
     padding: 5px;
     margin: 1px;
     text-align: center;
@@ -500,52 +537,38 @@ textarea {
     border-radius: 10px;
   }
 
-  /* mobile header */
-  #navbar-mobile {
-    display: block;
-    color: white;
-    font-size: 1rem;
-    padding: 1rem;
-  }
-  #navbar-mobile i {
-    font-size: 1.5rem;
-  }
-
   #check:checked ~ ul {
-    display: block ;
+    display: block;
     position: absolute;
     list-style: none;
     margin: auto;
-
     padding: 0px;
     border-radius: 10px;
   }
 
+  /* Mobile Header Section */
   header {
     height: 40vh;
   }
-  #header-content {
+
+  #heading-socials {
     padding-top: 2vmax;
   }
 
-  #my-name {
+  #primary-heading {
     font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 0.5rem;
   }
-  #my-name span {
+
+  #primary-heading span {
     font-size: 2.5rem;
-    
   }
-  /* NavBar Mobile */
-  #navbar-main {
-    display: none;
+  .social-icons li a {
+  font-size: 1.5rem;
   }
 
-  /* Section Headings */
-  .contact-heading h2 {
-    margin-left: 0rem;
-  }
+  /* Mobile Section Headings */
   .section-heading {
     width: 100%;
   }
@@ -553,56 +576,63 @@ textarea {
     margin-left: 0rem;
   }
 
-  /* Work Experience */
+  .contact-heading h2 {
+    margin-left: 0rem;
+  }
 
-  .timeline-line {
+  /* Mobile Experience Section */
+
+  .divider-line {
     left: 0%;
     height: 83.5%;
   }
 
-  .exp::after {
+  .exp-card::after {
     left: calc(-2.5vw - 2.6px) !important;
   }
-  .exp:nth-child(2n)::after {
-    left: 0px;
+  .exp-card:nth-child(2n)::after {
     right: auto;
   }
-  .timeline .exp:nth-child(2n) {
+  
+  .exp-content .exp-card:nth-child(2n) {
     left: 0%;
     margin: 5rem 2vw;
   }
-  .timeline .exp {
+
+  .exp-content .exp-card {
     width: 90%;
     height: auto;
     position: relative;
     padding-left: 1rem;
   }
+
   .exp-heading {
   margin-bottom: 0px;
 }
 
-  /* Section */
-  .timeline-line-2 {
+
+  /* Mobile Education Section */
+  .edu-divider-line {
     left: 0%;
     height: 79%;
   }
 
-  /* Portfolio */
-  .projects {
+  /* Mobile Portfolio Section*/
+  .project-content {
     gap: 2rem;
   }
 
-  /* Contact  */
+  /* Mobile Contact Section */
   .contact-content {
     display: block;
   }
 
-  .contact-input input,
+  .contact-form input,
   textarea {
     width: 90%;
   }
 
-  .contact-input {
+  .contact-form {
     width: 100%;
     margin-bottom: 3rem;
   }

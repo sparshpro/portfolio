@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sparsh Chaudhari</title>
+    <meta name="description" content="Portfolio" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+
     <!-- Favicon -->
 
     <!-- Font Awesome -->
     <link
+      rel="stylesheet"
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -17,16 +21,16 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
     <!-- Header Section -->
     <header>
+      <!-- Mobile Navigation -->
       <nav id="navbar-mobile">
         <input type="checkbox" id="check" />
         <label for="check">
           <i class="fa-solid fa-bars"></i>
         </label>
-        <ul>
+        <ul class="dropdown">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -50,7 +54,9 @@
           </li>
         </ul>
       </nav>
-      <nav id="navbar-main" class="container-width">
+
+      <!-- Primary Navigation -->
+      <nav id="navbar-primary" class="container-width">
         <ul>
           <li>
             <a href="#home">Home</a>
@@ -76,20 +82,21 @@
         </ul>
       </nav>
 
-      <div id="header-content" class="container-width">
-        <h1 id="my-name"><span>S</span>parsh <span>C</span>haudhari</h1>
+      <!-- Primary Heading & Socials -->
+      <div id="heading-socials" class="container-width">
+        <h1 id="primary-heading"><span>S</span>parsh <span>C</span>haudhari</h1>
         <ul class="social-icons">
           <li>
             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-solid fa-mobile-button"></i></a>
           </li>
         </ul>
       </div>
@@ -99,11 +106,12 @@
     <main>
       <!-- About Section -->
       <section id="about">
-        <div class="about-main container-width">
+        <!-- About Content -->
+        <div class="about-content container-width">
           <div id="about-photo">
             <img src="image/profile-pic.webp" alt="Profile Photo" />
           </div>
-          <div id="about-content">
+          <div id="about-description">
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Consequuntur iure velit asperiores temporibus amet consectetur
@@ -136,47 +144,59 @@
 
       <!-- Skills Section -->
       <section id="skills">
+        <!-- Skills Section Heading -->
         <div class="section-heading container-width">
           <i class="fa-solid fa-chalkboard-user"></i>
           <h2>Skills</h2>
         </div>
 
-        <div class="skill-progress container-width">
-          <div class="percentage-100">
-            <div class="eighty">
+        <!-- Skills Section Content-->
+        <div class="skills-content container-width">
+          <!-- Skill Badge 1 -->
+          <div class="skill-badge">
+            <div class="skill-80 skill-badge-inner">
               <span>C++</span>
             </div>
           </div>
-          <div class="percentage-100">
-            <div class="fifty">
+
+          <!-- Skill Badge 2 -->
+          <div class="skill-badge">
+            <div class="skill-50 skill-badge-inner">
               <span>HTML</span>
             </div>
           </div>
-          <div class="percentage-100">
-            <div class="ninety">
+
+          <!-- Skill Badge 3 -->
+          <div class="skill-badge">
+            <div class="skill-90 skill-badge-inner">
               <span>JavaScript</span>
             </div>
           </div>
-          <div class="percentage-100">
-            <div class="seventy">
+
+          <!-- Skill Badge 4 -->
+          <div class="skill-badge">
+            <div class="skill-70 skill-badge-inner">
               <span>React</span>
             </div>
           </div>
 
-          <div class="percentage-100">
-            <div class="sixty">
+          <!-- Skill Badge 5 -->
+          <div class="skill-badge">
+            <div class="skill-60 skill-badge-inner">
               <span>Redux</span>
             </div>
           </div>
 
-          <div class="percentage-100">
-            <div class="eighty">
+          <!-- Skill Badge 6 -->
+          <div class="skill-badge">
+            <div class="skill-80 skill-badge-inner">
               <span>Webpack</span>
             </div>
           </div>
 
-          <div class="percentage-100">
-            <div class="ninety">
+          <!-- Skill Badge 7 -->
+          <div class="skill-badge">
+            <div class="skill-90 skill-badge-inner">
               <span>PWA</span>
             </div>
           </div>
@@ -185,13 +205,16 @@
 
       <!-- Experience Section -->
       <section id="experience">
+        <!-- Experience Section Heading -->
         <div class="section-heading container-width">
           <i class="fa-solid fa-briefcase"></i>
           <h2>Work Experience</h2>
         </div>
 
-        <div class="timeline container-width">
-          <div class="exp">
+        <!-- Experience Section Content -->
+        <div class="exp-content container-width">
+          <!-- Experience Card 1 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>Software Engineer</h3>
               <h4>Tech Company</h4>
@@ -200,44 +223,15 @@
             <div class="exp-logo">
               <img src="image/ninjasicon.png" alt="" />
             </div>
-            <p>
-              Worked on developing scalable web applications using modern
-              frameworks and technologies. Collaborated with cross-functional
-              teams to deliver high-quality software solutions.
-            </p>
-          </div>
-          <div class="exp">
-            <div class="exp-heading">
-              <h3>Software Engineer</h3>
-              <h4>Tech Company</h4>
-              <span>Jan 2020 - Present</span>
-            </div>
-            <div class="exp-logo">
-              <img src="image/ninjasicon.png" alt="" />
-            </div>
-            <p>
-              Worked on developing scalable web applications using modern
-              frameworks and technologies. Collaborated with cross-functional
-              teams to deliver high-quality software solutions.
-            </p>
-          </div>
-          <div class="exp">
-            <div class="exp-heading">
-              <h3>Software Engineer</h3>
-              <h4>Tech Company</h4>
-              <span>Jan 2020 - Present</span>
-            </div>
-            <div class="exp-logo">
-              <img src="image/ninjasicon.png" alt="" />
-            </div>
-            <p>
+            <p class="exp-description">
               Worked on developing scalable web applications using modern
               frameworks and technologies. Collaborated with cross-functional
               teams to deliver high-quality software solutions.
             </p>
           </div>
 
-          <div class="exp">
+          <!-- Experience Card 2 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>Software Engineer</h3>
               <h4>Tech Company</h4>
@@ -246,14 +240,15 @@
             <div class="exp-logo">
               <img src="image/ninjasicon.png" alt="" />
             </div>
-            <p>
+            <p class="exp-description">
               Worked on developing scalable web applications using modern
               frameworks and technologies. Collaborated with cross-functional
               teams to deliver high-quality software solutions.
             </p>
           </div>
 
-          <div class="exp">
+          <!-- Experience Card 3 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>Software Engineer</h3>
               <h4>Tech Company</h4>
@@ -262,15 +257,50 @@
             <div class="exp-logo">
               <img src="image/ninjasicon.png" alt="" />
             </div>
-            <p>
+            <p class="exp-description">
               Worked on developing scalable web applications using modern
               frameworks and technologies. Collaborated with cross-functional
               teams to deliver high-quality software solutions.
             </p>
           </div>
 
-          <div class="timeline-line">
-            <div class="timeline-object">
+          <!-- Experience Card 4 -->
+          <div class="exp-card">
+            <div class="exp-heading">
+              <h3>Software Engineer</h3>
+              <h4>Tech Company</h4>
+              <span>Jan 2020 - Present</span>
+            </div>
+            <div class="exp-logo">
+              <img src="image/ninjasicon.png" alt="" />
+            </div>
+            <p class="exp-description">
+              Worked on developing scalable web applications using modern
+              frameworks and technologies. Collaborated with cross-functional
+              teams to deliver high-quality software solutions.
+            </p>
+          </div>
+
+          <!-- Experience Card 5 -->
+          <div class="exp-card">
+            <div class="exp-heading">
+              <h3>Software Engineer</h3>
+              <h4>Tech Company</h4>
+              <span>Jan 2020 - Present</span>
+            </div>
+            <div class="exp-logo">
+              <img src="image/ninjasicon.png" alt="" />
+            </div>
+            <p class="exp-description">
+              Worked on developing scalable web applications using modern
+              frameworks and technologies. Collaborated with cross-functional
+              teams to deliver high-quality software solutions.
+            </p>
+          </div>
+
+          <!-- Experience Section Divider Dotted -->
+          <div class="divider-line">
+            <div class="divider-object">
               <i class="fa fa-plane"> </i>
             </div>
           </div>
@@ -279,13 +309,16 @@
 
       <!-- Education Section -->
       <section id="education">
+        <!-- Education Section Heading -->
         <div class="section-heading container-width">
           <i class="fa-solid fa-graduation-cap"></i>
           <h2>Education</h2>
         </div>
 
-        <div class="timeline container-width">
-          <div class="exp">
+        <!-- Education Section Content -->
+        <div class="exp-content container-width">
+          <!-- Education Card 1 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>
                 BTech <br />
@@ -297,14 +330,15 @@
             <div class="exp-logo">
               <img src="image/iiitd_logo.png" alt="" />
             </div>
-            <p>
+            <p class="exp-description">
               Graduated with honors, focusing on software development,
               algorithms, and data structures. Participated in various coding
               competitions and hackathons.
             </p>
           </div>
 
-          <div class="exp">
+          <!-- Education Card 2 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>
                 BTech <br />
@@ -316,14 +350,15 @@
             <div class="exp-logo">
               <img src="image/iiitd_logo.png" alt="" />
             </div>
-            <p>
+            <p class="exp-description">
               Graduated with honors, focusing on software development,
               algorithms, and data structures. Participated in various coding
               competitions and hackathons.
             </p>
           </div>
 
-          <div class="exp">
+          <!-- Education Card 3 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>
                 BTech <br />
@@ -335,14 +370,15 @@
             <div class="exp-logo">
               <img src="image/iiitd_logo.png" alt="" />
             </div>
-            <p>
+            <p class="exp-description">
               Graduated with honors, focusing on software development,
               algorithms, and data structures. Participated in various coding
               competitions and hackathons.
             </p>
           </div>
 
-          <div class="exp">
+          <!-- Education Card 4 -->
+          <div class="exp-card">
             <div class="exp-heading">
               <h3>
                 B-Tech <br />
@@ -354,15 +390,15 @@
             <div class="exp-logo">
               <img src="image/iiitd_logo.png" alt="" />
             </div>
-            <p>
+            <p class="exp-description">
               Graduated with honors, focusing on software development,
               algorithms, and data structures. Participated in various coding
               competitions and hackathons.
             </p>
           </div>
-
-          <div class="timeline-line-2">
-            <div class="timeline-object">
+          <!-- Education Section Divider Dotted  -->
+          <div class="edu-divider-line">
+            <div class="divider-object">
               <i class="fa-solid fa-car-side"></i>
             </div>
           </div>
@@ -371,50 +407,29 @@
 
       <!-- Portfolio Section -->
       <section id="portfolio">
+        <!-- Portfolio Section Heading -->
         <div class="section-heading container-width">
           <i class="fa-solid fa-folder-open"></i>
           <h2>Portfolio</h2>
         </div>
 
-        <div class="projects container-width">
+        <!-- Portfolio Section Content -->
+        <div class="project-content container-width">
+          <!-- Project Card 1 -->
           <div class="project-card">
-            
-            <div class="project-info">
-              <h3>Project Title</h3>
-              <p>
-                Brief description of the project highlighting key features and
-                technologies used.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
-            
-            <div class="project-info">
-              <h3>Project Title</h3>
-              <p>
-                Brief description of the project highlighting key features and
-                technologies used.
-              </p>
-            </div>
+            <a href="https://www.google.com/">
+              <div class="project-info">
+                <h3>Project Title</h3>
+                <p>
+                  Brief description of the project highlighting key features and
+                  technologies used.
+                </p>
+              </div>
             </a>
           </div>
 
+          <!-- Project Card 2 -->
           <div class="project-card">
-            <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
-            <div class="project-info">
-              <h3>Project Title</h3>
-              <p>
-                Brief description of the project highlighting key features and
-                technologies used.
-              </p>
-            </div>
-            </a>
-          </div>
-
-          <div class="project-card">
-            
             <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
               <div class="project-info">
                 <h3>Project Title</h3>
@@ -426,28 +441,62 @@
             </a>
           </div>
 
+          <!-- Project Card 3 -->
           <div class="project-card">
-            
-            <div class="project-info">
-              <h3>Project Title</h3>
-              <p>
-                Brief description of the project highlighting key features and
-                technologies used.
-              </p>
-            </div>
+            <a href="https://portfolio-pi-ruddy-4mwtjuha9i.vercel.app/">
+              <div class="project-info">
+                <h3>Project Title</h3>
+                <p>
+                  Brief description of the project highlighting key features and
+                  technologies used.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <a href="https://sparshdeals.in">
+              <div class="project-info">
+                <h3>Project Title</h3>
+                <p>
+                  Brief description of the project highlighting key features and
+                  technologies used.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="project-card">
+            <a href="https://www.google.com/">
+              <div class="project-info">
+                <h3>Project Title</h3>
+                <p>
+                  Brief description of the project highlighting key features and
+                  technologies used.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
+    </main>
 
+    <!-- Footer Section -->
+    <footer>
       <!-- Contact Section -->
       <section id="contact">
+        <!-- Contact Section Heading -->
         <div class="contact-heading container-width">
           <i class="fa-regular fa-address-card"></i>
           <h2>Contact</h2>
         </div>
 
+        <!-- Contact Section Content -->
         <div class="contact-content container-width">
-          <div class="contact-input">
+          <!-- Contact Form -->
+          <div class="contact-form">
             <form action="https://api.web3forms.com/submit" method="POST">
               <input
                 type="hidden"
@@ -455,12 +504,22 @@
                 value="a3bf759f-fc96-4a3d-a432-8e773b6b8335"
               />
               <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email"  required />
-              <textarea name="message" placeholder="Message" required></textarea>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
               <button type="submit">Submit</button>
             </form>
           </div>
 
+          <!-- Content Details -->
           <div class="contact-details">
             <div class="getintouch">
               <h3>Get In Touch</h3>
@@ -490,9 +549,6 @@
           </div>
         </div>
       </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer></footer>
+    </footer>
   </body>
 </html>
