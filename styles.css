@@ -156,13 +156,14 @@ header {
 }
 
 .skill-badge {
-  width: auto;
+  text-align: center;
+  width: 100px;
   padding:  5px 20px;
   height: 35px;
   line-height: 2rem;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  border: 2px double  rgba(255, 99, 71, 0.395);
+  border: 2px solid  rgba(255, 99, 71, 0.395);
   
 }
 
@@ -183,7 +184,7 @@ header {
     
   }
   50%{
-    transform: scale(1.02);
+    transform: scale(1.05);
 
   }
   100% {
